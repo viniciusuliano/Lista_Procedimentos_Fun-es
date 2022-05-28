@@ -17,3 +17,8 @@ body {
 a { 
   color: #000;
 }
+
+.App {
+  width: 100%;
+  position: relative;
+}

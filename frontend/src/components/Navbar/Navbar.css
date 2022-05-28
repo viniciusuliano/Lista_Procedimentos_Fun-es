@@ -1,0 +1,125 @@
+.Navbar {
+    width: 100%;
+    padding: 1rem 3rem;
+    transition: ease .5s;
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar-down {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+/* REFERENCES */
+.Navbar .references {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar .references .araquari-flag {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.Navbar .references .name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+/* MENU TOGGLE */
+.Navbar .menu-toggle {
+    width: 3rem;
+
+    display: none;
+    flex-direction: column;
+}
+
+.Navbar .menu-toggle span {
+    width: 100%;
+    height: .3rem;
+    background-color: #fff;
+    transition: ease .3s;
+}
+
+.Navbar .menu-toggle .mid-line {  
+    margin: .3rem 0rem;
+}
+
+.Navbar-open .menu-toggle .top-line {  
+    transform: translateY(.6rem);
+}
+
+.Navbar-open .menu-toggle .bot-line {  
+    transform: translateY(-.6rem);
+}
+
+/* CONTENT LINKS */
+.Navbar .content-links {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar .content-links li {
+    height: 100%;
+    padding: 0rem 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 768px) {
+    .Navbar {
+        height: 100vh;
+        padding: 1rem 2rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        align-items: center;
+    }
+
+    .Navbar-open {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.918);
+    }
+
+    .Navbar .references .name {
+        font-size: 1.8rem;
+    }
+
+    .Navbar .menu-toggle {
+        display: flex;
+        justify-self: end;
+    }
+
+    .Navbar .content-links {
+        grid-column: 1/3;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Navbar .content-links li {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    .Navbar-open .content-links {
+        display: flex;
+    }
+}
