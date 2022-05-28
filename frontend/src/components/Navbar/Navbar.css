@@ -36,6 +36,7 @@
 /* MENU TOGGLE */
 .Navbar .menu-toggle {
     width: 3rem;
+    cursor: pointer;
 
     display: none;
     flex-direction: column;
@@ -75,8 +76,24 @@
     cursor: pointer;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
+
+.Navbar .content-links li::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.Navbar .content-links li:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+  
 
 /* MEDIUM SCREENS */
 @media screen and (max-width: 768px) {
@@ -114,12 +131,18 @@
         justify-content: center;
     }
 
+    .Navbar-open .content-links {
+        display: flex;
+    }
+
     .Navbar .content-links li {
         padding: 2rem;
         font-size: 3rem;
+        opacity: 0;
+        transition: ease .5s;
     }
 
-    .Navbar-open .content-links {
-        display: flex;
+    .Navbar-open .content-links li {
+        opacity: 1;
     }
 }
