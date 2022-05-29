@@ -2,6 +2,126 @@
     width: 100%;
 }
 
-.Home img {
+/* BANNER */
+.Home .banner {
     width: 100%;
+    position: relative;
+}
+
+.Home .banner img {
+    width: 100%;
+}
+
+.Home .banner .apresentation {
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 3rem;
+}
+
+.Home .banner .apresentation h1 {
+    font-size: 4.2rem;
+}
+
+.Home .banner .apresentation p {
+    font-size: 2.4rem;
+}
+
+/* ABOUT */
+.Home .about {
+    width: 100%;
+    padding: 0rem 5rem;
+    margin-top: var(--margin-top-section);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home .about .texts-about {
+    width: 70%;
+}
+
+.Home .about .texts-about .title-about {
+    font-size: 3.5rem;
+}
+
+.Home .about .texts-about .text-about {
+    font-size: 2.4rem;
+}
+
+.Home .about .image-about {
+    width: 25%;
+    max-width: 32rem;
+    min-width: 30rem;
+}
+
+.Home .about .image-about .perfil-image-about {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* PROJECTS */
+.Home .projects-section {
+    width: 100%;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home .projects-section .projects-section-title {
+    font-size: 3.5rem;
+}
+
+.Home .projects-section .projects {
+    width: 100%;
+    margin-top: var(--margin-top-section);
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 15rem);
+    grid-gap: 4rem;
+    align-items: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .Home .banner .apresentation h1 {
+        font-size: 3rem;
+    }
+
+    .Home .banner .apresentation p {
+        font-size: 1.8rem;
+    }
+
+    .Home .about {
+        padding: 0rem var(--margin-sides);
+        justify-content: center;
+    }
+
+    .Home .about .texts-about {
+        width: 100%;
+    }
+
+    .Home .about .image-about {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Home .banner .apresentation {
+        left: 2rem;
+    }
+
+    .Home .banner .apresentation h1 {
+        font-size: 2rem;
+    }
+
+    .Home .banner .apresentation p {
+        font-size: 1.4rem;
+    }
 }

@@ -2,11 +2,9 @@ import './Navbar.css';
 
 function Navbar() {
   window.addEventListener('scroll', () => {
-    if(window.scrollY > 50) {
-      // document.querySelector('.Navbar').style.backgroundColor = "rgba(0, 0, 0, 0.918)"
+    if(window.scrollY > 30) {
       document.querySelector('.Navbar').classList.add('Navbar-down')
     } else {
-      // document.querySelector('.Navbar').style.backgroundColor = "transparent"
       document.querySelector('.Navbar').classList.remove('Navbar-down')
     }
   })
@@ -14,12 +12,12 @@ function Navbar() {
   var open = false
 
   const openNav = () => {
-    document.querySelector('.Navbar').classList.add('Navbar-open')
-    
     if(open) {
       document.querySelector('.Navbar').classList.remove('Navbar-open')
+      document.querySelector('body').style.overflow = 'auto'
       open = false;
     } else {
+      document.querySelector('body').style.overflow = 'hidden'
       document.querySelector('.Navbar').classList.add('Navbar-open')
       open = true;
     }
