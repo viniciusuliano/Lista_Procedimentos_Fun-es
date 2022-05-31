@@ -51,7 +51,8 @@
 }
 
 .Home .about .texts-about .text-about {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    text-align: justify;
 }
 
 .Home .about .image-about {
@@ -125,6 +126,7 @@
 
 .Home .news .news-align {
     width: 100%;
+    padding-bottom: 2rem;
     margin-top: 3rem;
     overflow: auto;
 }

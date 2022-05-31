@@ -28,6 +28,21 @@ a {
   width: 100%;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F9F9F9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
 @media screen and (max-width: 1200px) {
   * {
     font-size: 50%;
@@ -37,5 +52,6 @@ a {
 @media screen and (max-width: 600px) {
   :root {
     --margin-sides: 2rem;
+    --margin-top-section: 3rem;
   }
 }

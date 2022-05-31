@@ -18,7 +18,7 @@ function Home() {
 
       <div className="about">
         <div className="texts-about">
-          <h1 className="title-about">Where does it come from?</h1>
+          <h1 className="title-about">Quem é Sidinei Xavier?</h1>
 
           <p className="text-about">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin 
           literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked 
