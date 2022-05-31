@@ -1,11 +1,11 @@
 import './ProjectCard.css';
 
-function ProjectCard() {
+function ProjectCard(props) {
   return (
     <div className="Project-Card">
       <div className="texts">
-        <h1 className="project-title">Feirão do emprego</h1>
-        <p className="project-summary">This book is a treatise on the theory of ethics, very popular during the Renaissance..</p>
+        <h1 className="project-title">{props.title}</h1>
+        <p className="project-summary">{props.summary}</p>
       </div>
       
       {/* <img src="images/feirao-trabalho.jpg" alt="" /> */}

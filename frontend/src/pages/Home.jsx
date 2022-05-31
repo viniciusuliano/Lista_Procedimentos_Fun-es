@@ -1,5 +1,7 @@
 import './Home.css';
+import { Link } from 'react-router-dom'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
+import News from '../components/News/News';
 import Footer from '../components/Footer'
 
 function Home() {
@@ -34,8 +36,34 @@ function Home() {
       <div className="projects-section">
         <h1 className="projects-section-title">Projetos Aprovados</h1>
 
-        <div className="projects">
+        <div className="align-projects">
+          <div className="projects">
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+          
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+            <ProjectCard title="Feirão do Emprego" summary="Feirão feito em conjunto a diversas empresas para oferecer empregos. Foi realizado dia 30/05/2022"/>
+          </div>
+        </div>
 
+        <a href="#"></a>
+        <Link to="projetos" className="all-projects">Ver todos os projetos</Link>
+      </div>
+
+      <div className="news">
+        <h1 className="news-section-title">Venha conferir as noticias abaixo sobre a nossa cidade</h1>
+
+        <div className="news-align">
+          <div className="news-cards">
+            <News url="news" image="feirao-trabalho-news.jpg" title="Feirão do Emprego" summary="Feirão irá acontecer dia 31/05/2022 as 10h em Araquari."/>
+            <News url="news" image="news-2.jpeg" title="Feirão do Emprego" summary="Feirão irá acontecer dia 31/05/2022 as 10h em Araquari."/>
+            <News url="news" image="news-3.jpeg" title="Feirão do Emprego" summary="Feirão irá acontecer dia 31/05/2022 as 10h em Araquari."/>
+            <News url="news" image="news-4.jpg" title="Feirão do Emprego" summary="Feirão irá acontecer dia 31/05/2022 as 10h em Araquari."/>
+          </div>
         </div>
       </div>
 

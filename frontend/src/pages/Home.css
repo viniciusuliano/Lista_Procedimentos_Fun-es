@@ -1,5 +1,9 @@
 .Home {
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* BANNER */
@@ -29,8 +33,7 @@
 
 /* ABOUT */
 .Home .about {
-    width: 100%;
-    padding: 0rem 5rem;
+    width: 90%;
     margin-top: var(--margin-top-section);
 
     display: flex;
@@ -64,9 +67,9 @@
 
 /* PROJECTS */
 .Home .projects-section {
-    width: 100%;
-    margin-top: 5rem;
-
+    width: 80%;
+    margin-top: var(--margin-top-section);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,16 +77,64 @@
 }
 
 .Home .projects-section .projects-section-title {
-    font-size: 3.5rem;
+    font-size: var(--section-title);
 }
 
-.Home .projects-section .projects {
+.Home .projects-section .align-projects {
     width: 100%;
-    margin-top: var(--margin-top-section);
+    max-width: 140rem;
+    margin-top: 2rem;
+}
+
+.Home .projects-section .align-projects .projects {
+    width: 100%;
+    padding: 2rem;
+    overflow-x: auto;
 
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, 15rem);
+    grid-gap: 4rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.Home .projects-section .all-projects {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+}
+
+.Home .news {
+    width: 80%;
+    max-width: 95rem;
+    margin-top: var(--margin-top-section);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Home .news .news-section-title {
+    font-size: var(--section-title);
+    text-align: center;
+}
+
+.Home .news .news-align {
+    width: 100%;
+    margin-top: 3rem;
+    overflow: auto;
+}
+
+.Home .news .news-align .news-cards {
+    width: 100%;
+    margin-top: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     grid-gap: 4rem;
     align-items: center;
     justify-items: center;
@@ -99,6 +150,7 @@
     }
 
     .Home .about {
+        width: 100%;
         padding: 0rem var(--margin-sides);
         justify-content: center;
     }
@@ -123,5 +175,9 @@
 
     .Home .banner .apresentation p {
         font-size: 1.4rem;
+    }
+
+    .Home .projects-section {
+        width: 90%;
     }
 }
