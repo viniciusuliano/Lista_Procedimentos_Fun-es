@@ -23,6 +23,18 @@ function Navbar() {
     }
   }
 
+  function goToSection(section) {
+    if(section == 'About') {
+      console.log('About')
+    } else if(section == 'Project') {
+      console.log('Project')
+    } else if (section == 'News') {
+      console.log('News')
+    } else {
+      console.log('Contact')
+    }
+  }
+
   return (
     <nav className="Navbar">
         <div className="references">
@@ -37,10 +49,10 @@ function Navbar() {
         </div>
 
         <ul className="content-links">
-            <li className="p-nav">Sobre</li>
-            <li className="p-nav">Projetos</li>
-            <li className="p-nav">Notícias</li>
-            <li className="p-nav">Contatos</li>
+            <li className="p-nav" onClick={goToSection('About')}>Sobre</li>
+            <li className="p-nav" onClick={goToSection('Projects')}>Projetos</li>
+            <li className="p-nav" onClick={goToSection('News')}>Notícias</li>
+            <li className="p-nav" onClick={goToSection('Contact')}>Contatos</li>
         </ul>
     </nav>
   );

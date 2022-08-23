@@ -20,7 +20,7 @@
     color: #fff;
     position: absolute;
     bottom: 10%;
-    left: 3rem;
+    left: var(--margin-sides);
 }
 
 .Home .banner .apresentation h1 {
@@ -34,16 +34,17 @@
 /* ABOUT */
 .Home .about {
     width: 90%;
-    margin-top: var(--margin-top-section);
+    /* margin-top: var(--margin-top-section); */
+    margin-top: 3rem;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4rem;
+    align-items: start;
 }
 
 .Home .about .texts-about {
-    width: 70%;
+    width: 100%;
 }
 
 .Home .about .texts-about .title-about {
@@ -154,15 +155,13 @@
     .Home .about {
         width: 100%;
         padding: 0rem var(--margin-sides);
-        justify-content: center;
+        grid-template-columns: auto;
+        grid-gap: 2rem;
+        justify-items: center;
     }
 
     .Home .about .texts-about {
         width: 100%;
-    }
-
-    .Home .about .image-about {
-        margin-top: 2rem;
     }
 }
 

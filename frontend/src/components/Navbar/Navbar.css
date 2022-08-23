@@ -1,6 +1,6 @@
 .Navbar {
     width: 100%;
-    padding: 1rem 3rem;
+    padding: 1rem var(--margin-sides);
     transition: ease .5s;
     position: fixed;
     z-index: 1;
